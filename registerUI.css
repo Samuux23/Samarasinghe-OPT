@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(img/heroimg.png);
+  background-size: cover;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+body p {
+  color: rgb(0, 0, 0);
+  transition: all 0.4s ease;
+}
+
+.back-icon {
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  font-weight: bolder;
+  justify-content: flex-end;
+}
+
+.back-icon a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.register-interface {
+  width: 420px;
+  height: fit-content;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: rgba(17, 12, 46, 0.1) 0px 48px 100px 0px;
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+  padding: 15px 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.register-interface h1 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+}
+
+.register-interface .input-form {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-form input {
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.input-form ::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+.register-interface .remember-me {
+  display: flex;
+  justify-content: space-between;
+  margin: -15px 0 15px;
+}
+
+.remember-me label input {
+  accent-color: rgb(0, 0, 0);
+  margin-right: 5px;
+}
+
+.remember-me a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.remember-me a:hover {
+  text-decoration: underline;
+}
+
+.register-btn {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-weight: 500;
+}
+
+.register-btn:hover {
+  transition: all 0.4s ease;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: solid 1px black;
+}
+
+.google {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.google:hover {
+  transition: all 0.4s ease;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: solid 1px black;
+}
+
+.google i {
+  margin-right: 15px;
+}
+
+.google a {
+  text-decoration: none;
+  color: white;
+}
+
+.google a:hover {
+  color: black;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.login-link p {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 500;
+}
+.login-link a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link p a:hover {
+  text-decoration: underline;
+}

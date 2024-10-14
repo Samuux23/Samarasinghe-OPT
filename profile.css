@@ -1,0 +1,194 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Afacad", sans-serif;
+}
+
+body {
+  background-color: #f0f4f8; /* Light grey background for a modern look */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  background-color: #ffffff;
+  border-radius: 16px; /* Modern rounded edges */
+  padding: 40px;
+  width: 100%;
+  max-width: 1000px; /* Responsive width */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Softer and larger shadow */
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1a202c; /* Darker, more modern color */
+  font-size: 32px;
+  font-weight: 700; /* Bold headline */
+}
+
+/* Profile container with two columns */
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Wrap on smaller screens */
+  gap: 30px;
+}
+
+/* Current info card */
+.current-info {
+  flex: 1;
+  background-color: #f7fafc; /* Slightly off-white background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Lighter shadow for the current info card */
+}
+
+.current-info h2 {
+  margin-bottom: 15px;
+  color: #2d3748;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.current-info p {
+  margin-bottom: 10px;
+  color: #4a5568;
+  font-size: 18px;
+}
+
+/* Update form card */
+.update-form {
+  flex: 1;
+  background-color: #f7fafc;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+  color: #2d3748;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #edf2f7;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition for focus effect */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 8px rgba(49, 130, 206, 0.2); /* Soft blue shadow on focus */
+  outline: none;
+}
+
+textarea {
+  height: 120px;
+}
+
+button {
+  background-color: #8f242d;
+  color: white;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover and click */
+}
+
+button:hover {
+  background-color: #4d060c;
+  transform: translateY(-3px); /* Lift on hover */
+}
+
+button:active {
+  transform: translateY(0); /* Reset transform on click */
+}
+
+/* Order history styles */
+.order-history {
+  margin-top: 40px; /* Adds space before the order history section */
+  width: 100%; /* Make it full width */
+}
+
+.order-history h2 {
+  margin-bottom: 20px;
+  color: #2d3748;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+table th {
+  background-color: #edf2f7;
+  color: #2d3748;
+  font-weight: 600;
+}
+
+table tr:hover {
+  background-color: #e2e8f0; /* Lighter hover effect */
+}
+
+table td {
+  color: #2d3748;
+}
+
+table td.status-completed {
+  color: #38a169; /* Green for completed orders */
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+  }
+
+  .order-history h2 {
+    text-align: center;
+  }
+}
+
+.appoinment-history{
+  margin-top: 30px;
+}
